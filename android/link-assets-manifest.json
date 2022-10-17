@@ -1,0 +1,93 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/ARIAL.TTF",
+      "sha1": "66154062e9902d6664f9855bfc04138e8b0c7c53"
+    },
+    {
+      "path": "assets/fonts/ARIALBD 1.TTF",
+      "sha1": "03ea55d42903c041b1ff64c2bd593fb7b9d3a843"
+    },
+    {
+      "path": "assets/fonts/ARIALBD.TTF",
+      "sha1": "03ea55d42903c041b1ff64c2bd593fb7b9d3a843"
+    },
+    {
+      "path": "assets/fonts/ARIALBI 1.TTF",
+      "sha1": "706d164d403264f8ba313e82efcd6e356b6cee29"
+    },
+    {
+      "path": "assets/fonts/ARIALBI.TTF",
+      "sha1": "706d164d403264f8ba313e82efcd6e356b6cee29"
+    },
+    {
+      "path": "assets/fonts/ARIALBLACKITALIC.TTF",
+      "sha1": "e72c3388d2948e3632e5f5beb25fee0928a7d644"
+    },
+    {
+      "path": "assets/fonts/ArialCE.ttf",
+      "sha1": "f78257e5b1fd556dbaf87052a48f9211123a4aef"
+    },
+    {
+      "path": "assets/fonts/arialceb.ttf",
+      "sha1": "a5dd06bcebc6af7351393fbbced597c2a0e408a3"
+    },
+    {
+      "path": "assets/fonts/ArialCEBoldItalic.ttf",
+      "sha1": "b40a612ab8031fcbce0361bd049cfd1f60477df0"
+    },
+    {
+      "path": "assets/fonts/ArialCEItalic.ttf",
+      "sha1": "c50f938f2f47428ae712939b53f3f93c29c1403c"
+    },
+    {
+      "path": "assets/fonts/ArialCEMTBlack.ttf",
+      "sha1": "830da1099561ee305c5e5b9b8f74b6e033cc84a7"
+    },
+    {
+      "path": "assets/fonts/ARIALI 1.TTF",
+      "sha1": "c04eaf9e6eb0b462049309bf670a49a4ed7e6725"
+    },
+    {
+      "path": "assets/fonts/ARIALI.TTF",
+      "sha1": "c04eaf9e6eb0b462049309bf670a49a4ed7e6725"
+    },
+    {
+      "path": "assets/fonts/ARIALLGT.TTF",
+      "sha1": "1cf3ca8ca39443abf23f865b90e7b427d90083dc"
+    },
+    {
+      "path": "assets/fonts/ARIALLGTITL.TTF",
+      "sha1": "984e98502d7180aba52c5132aaf4a40f559ccc73"
+    },
+    {
+      "path": "assets/fonts/ArialMdm.ttf",
+      "sha1": "f500ce2af19b434fcca06e91ac27747155bf2f91"
+    },
+    {
+      "path": "assets/fonts/ArialMdmItl.ttf",
+      "sha1": "e2cfa57bfc4f0302582f14857d3b038c39be8700"
+    },
+    {
+      "path": "assets/fonts/ARIALN.TTF",
+      "sha1": "66e81e620ae96df1f1b35d8ef57ea42a7f327265"
+    },
+    {
+      "path": "assets/fonts/ARIALNB.TTF",
+      "sha1": "2bb165b1c58956eb4d4416eb2abb0329d40a282c"
+    },
+    {
+      "path": "assets/fonts/ARIALNBI.TTF",
+      "sha1": "a7f30de11ed80c14b3d6716c82b392a920df5df5"
+    },
+    {
+      "path": "assets/fonts/ARIALNI.TTF",
+      "sha1": "780fc5059f6d5a272cb2f04c4c81bc8660b57328"
+    },
+    {
+      "path": "assets/fonts/ARIBLK.TTF",
+      "sha1": "e6528182997a46a5daf8008fab9ec5fed0a84ce2"
+    }
+  ]
+}
