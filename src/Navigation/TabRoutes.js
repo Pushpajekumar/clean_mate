@@ -12,8 +12,11 @@ const TabRoutes = () => {
   return (
      <Tab.Navigator 
      initialRouteName={NavigationStrings.HOME}
-     screenOptions={{headerShown: false}}
-     tabBarOptions={{showLabel: false }}
+     screenOptions={{
+      headerShown: false,
+      tabBarShowLabel: false,
+    }}
+     
      >
       <Tab.Screen 
       name={NavigationStrings.HOME} 

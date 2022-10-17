@@ -154,3 +154,56 @@ export const serviceOfTheMonth = [
         discount: 50
     },
 ]
+
+export const profileSetting = [
+    {
+        id: 1,
+        name: "My Bookings",
+        Icon: "newspaper-o"
+    },
+    {
+        id: 2,
+        name: "Manage Addresses",
+        Icon: "search-location"
+    },
+    {
+        id: 3,
+        name: "About Clean Mate",
+        Icon: "newspaper-o"
+    },
+    {
+        id: 4,
+        name: "Share Clean Mate",
+        Icon: "newspaper-o"
+    },
+    {
+        id: 5,
+        name: "My Bookings",
+        Icon: "newspaper-o"
+    },
+    {
+        id: 6,
+        name: "My Bookings",
+        Icon: "newspaper-o"
+    },
+    {
+        id: 7,
+        name: "My Bookings",
+        Icon: "newspaper-o"
+    },
+    {
+        id: 8,
+        name: "My Bookings",
+        Icon: "newspaper-o"
+    },
+    {
+        id: 9,
+        name: "My Bookings",
+        Icon: "newspaper-o"
+    },
+    {
+        id: 10,
+        name: "My Bookings",
+        Icon: "newspaper-o"
+    },
+]

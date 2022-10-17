@@ -18,7 +18,7 @@ const Carousel = ({details}) => {
         
 {
     details.map((item) => (
-        <View key={item.banner_id} style={styles.carouselBox}>
+        <View key={item.id} style={styles.carouselBox}>
             <Image 
             key={item.id}
             source={item.imgUri}
