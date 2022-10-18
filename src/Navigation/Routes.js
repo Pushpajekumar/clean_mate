@@ -18,7 +18,7 @@ function App() {
           headerShown: false,
         }
       }>
-       { true ? 
+       { false ? 
         <>
         {MainStack(Stack)}
          </> :
