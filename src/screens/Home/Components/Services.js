@@ -1,12 +1,22 @@
 import React from 'react'
+import NavigationStrings from '../../../constants/NavigationStrings'
 import { View, Text, StyleSheet, Image, TouchableOpacity } from 'react-native'
+import { useNavigation } from '@react-navigation/native'
+
 
 const Services = ({ details }) => {
+
+  const navigation = useNavigation()
+
+const handleService = () => {
+navigation.navigate(NavigationStrings.SUB_CATEGORY)
+}
+
   return (
      <View style={styles.productContainer}>
         {details.map((value) => (
           <View style={styles.box} key={value.id}>
-          <TouchableOpacity style={styles.productBox}>
+          <TouchableOpacity style={styles.productBox} onPress={handleService} >
            <Image 
         source={value.imgUri}
         style={styles.image}

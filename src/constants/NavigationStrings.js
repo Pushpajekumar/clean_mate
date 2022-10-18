@@ -9,4 +9,6 @@ export default {
     HOME: "Home",
     PROFILE: "Profile",
     STORE: "Store",
+    SUB_CATEGORY: "Subcategory",
+    SERVICE_INFO: "ServiceInfo",
 }

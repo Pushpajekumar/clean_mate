@@ -207,3 +207,145 @@ export const profileSetting = [
         Icon: "newspaper-o"
     },
 ]
+
+export const subCatData = [
+    {
+        id: 1,
+        imageUri:  require("../images/kitchen-cleaning.jpg"),
+        title: "Home Cleaning"
+    },
+    {
+        id: 2,
+        imageUri:  require("../images/kitchen-cleaning.jpg"),
+        title: "Sofa Cleaning"
+    },
+    {
+        id: 3,
+        imageUri:  require("../images/kitchen-cleaning.jpg"),
+        title: "Commercials Cleaning"
+    },
+    {
+        id: 4,
+        imageUri:  require("../images/kitchen-cleaning.jpg"),
+        title: "Deep Cleaning"
+    },
+]
+
+export const ProductOfferData = [
+    {
+        id: 1,
+        offer: "Get 15% on every order",
+        code: "Get Plus Now"
+    },
+    {
+        id: 2,
+        offer: "Flat ₹100 on order",
+        code: "Use Code 12345"
+    },
+    {
+        id: 3,
+        offer: "Get Free EveryThing",
+        code: "Just Use free"
+    },
+    {
+        id: 4,
+        offer: "Get 15% on every order",
+        code: "Get Plus Now"
+    },
+    {
+        id: 5,
+        offer: "Get 15% on every order",
+        code: "Get Plus Now"
+    },
+    {
+        id: 6,
+        offer: "Get 15% on every order",
+        code: "Get Plus Now"
+    },
+    {
+        id: 7,
+        offer: "Get 15% on every order",
+        code: "Get Plus Now"
+    },
+    {
+        id: 8,
+        offer: "Get 15% on every order",
+        code: "Get Plus Now"
+    },
+]
+
+export const otherServices = [
+    {
+        id:1,
+        imgUri: require("../images/bathroom-cleaning.jpg"),
+        title: "Bathroom Cleaning"
+    },
+    {
+        id:2,
+        imgUri: require("../images/home-cleaning.jpg"),
+        title: "Home Cleaning"
+    },
+    {
+        id:3,
+        imgUri: require("../images/kitchen-cleaning.jpg"),
+        title: "Kitchen Cleaning"
+    }
+]
+
+export const serviceList = [
+    {
+        id: 1,
+        name: "Cealing fan Cleaning ",
+        rating: 4.6,
+        totalRating: "48.7k",
+        amount: 300,
+        time: 30,
+        discription1: "Cleaing of one Celling Fan",
+        discription2: "Removal of Deeply embeded dirt and oil deposits from fan blade",
+        imgUri: require("../images/kitchen-cleaning.jpg"),
+    },
+    {
+        id: 2,
+        name: "Cealing fan Cleaning ",
+        rating: 4.6,
+        totalRating: "48.7k",
+        amount: 300,
+        time: 30,
+        discription1: "Cleaing of one Celling Fan",
+        discription2: "Removal of Deeply embeded dirt and oil deposits from fan blade",
+        imgUri: require("../images/kitchen-cleaning.jpg"),
+    },
+    {
+        id: 3,
+        name: "Cealing fan Cleaning ",
+        rating: 4.6,
+        totalRating: "48.7k",
+        amount: 300,
+        time: 30,
+        discription1: "Cleaing of one Celling Fan",
+        discription2: "Removal of Deeply embeded dirt and oil deposits from fan blade",
+        imgUri: require("../images/kitchen-cleaning.jpg"),
+    },
+    {
+        id: 4,
+        name: "Cealing fan Cleaning ",
+        rating: 4.6,
+        totalRating: "48.7k",
+        amount: 300,
+        time: 30,
+        discription1: "Cleaing of one Celling Fan",
+        discription2: "Removal of Deeply embeded dirt and oil deposits from fan blade",
+        imgUri: require("../images/kitchen-cleaning.jpg"),
+    },
+    {
+        id: 5,
+        name: "Cealing fan Cleaning ",
+        rating: 4.6,
+        totalRating: "48.7k",
+        amount: 300,
+        time: 30,
+        discription1: "Cleaing of one Celling Fan",
+        discription2: "Removal of Deeply embeded dirt and oil deposits from fan blade",
+        imgUri: require("../images/kitchen-cleaning.jpg"),
+    },
+]

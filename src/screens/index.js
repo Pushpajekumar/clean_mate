@@ -5,6 +5,8 @@ export {default as Gallery} from './Gallery/Gallery'
 export {default as Home} from './Home/Home'
 export {default as Profile} from './Profile/Profile'
 export {default as Store} from './Store/Store'
+export {default as Subcategory} from './SubCategory/SubCat'
+export {default as ServiceInfo} from './ServicesInfo/ServiceInfo'
 
 
 
