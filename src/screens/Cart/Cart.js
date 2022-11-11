@@ -1,8 +1,14 @@
 import React from 'react'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { View, Text, StyleSheet, TouchableOpacity, SafeAreaView } from 'react-native'
+import { useNavigation } from '@react-navigation/native';
+import NavigationStrings from '../../constants/NavigationStrings'
 
 const Cart = () => {
+const Navigation = useNavigation()
+const handleChekout = () => {
+    Navigation.navigate(NavigationStrings.CHECKOUT)
+}
 
   return (
     <SafeAreaView style={styles.container}>
@@ -21,6 +27,9 @@ const Cart = () => {
       </View>
     <TouchableOpacity style={styles.button}>
       <Text style={styles.buttonText}>Log In</Text>
+    </TouchableOpacity>
+    <TouchableOpacity style={styles.button} onPress={handleChekout}>
+      <Text style={styles.buttonText}>Chekout</Text>
     </TouchableOpacity>
     </View>
     </SafeAreaView>
@@ -64,7 +73,8 @@ const styles = StyleSheet.create({
     height: 50,
     backgroundColor: "#000",
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginVertical: 10
   },
   textContainer:{
     marginVertical: 30,

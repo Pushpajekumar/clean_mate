@@ -9,6 +9,7 @@ const MainStack = (Stack) => {
     <Stack.Screen name={NavigationStrings.TAB_ROUTES} component={TabRoutes} />
     <Stack.Screen name={NavigationStrings.SUB_CATEGORY} component={Screens.Subcategory} />
     <Stack.Screen name={NavigationStrings.SERVICE_INFO} component={Screens.ServiceInfo} />
+    <Stack.Screen name={NavigationStrings.CHECKOUT} component={Screens.Checkout} />
    </>
   )
 }

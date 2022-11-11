@@ -11,4 +11,5 @@ export default {
     STORE: "Store",
     SUB_CATEGORY: "Subcategory",
     SERVICE_INFO: "ServiceInfo",
+    CHECKOUT: "Checkout",
 }

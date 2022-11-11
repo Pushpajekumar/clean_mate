@@ -1,54 +1,52 @@
 import React from 'react'
 import { View, Text, StyleSheet, Image, Pressable, FlatList } from 'react-native'
 import Icon from 'react-native-vector-icons/FontAwesome';
-const ServiceList = ({details}) => {
+const ServiceList = ({details , handlepress}) => {
   return (
     <View style={styles.container}>
-    <FlatList 
-    data={details}
-    keyExtractor={(item) => item.id}
-    renderItem={(element) => (
-        <View style={styles.card}>
-        <View style={styles.infoContainer}>
-            <Text style={styles.name}>{element.item.name}</Text>
-            <View style={styles.reviewContainer}>
-        <Icon name='star' size={20} color="gray" /> 
-          <Text style={styles.rating}>{element.item.rating}</Text>
-          <Text style={styles.numberOfRating}>{element.item.totalRating}</Text>
-            </View>
-            <View style={styles.priceContainer}>
-                <Text style={styles.priceText}> ₹ {element.item.amount}</Text>
-                <View style={styles.timeContainer}>  
-                   <Icon name='circle' size={8} color="gray" /> 
-                    <Text style={{marginHorizontal: 5, color: "gray"}}>{element.item.time} </Text>
-                    <Text style={{color: "gray"}}>mins </Text>
-                </View>
-            </View>
-            <View style={styles.desc}>
-                <View style={styles.desc1}>
-                   <Icon name='circle' size={8} color="gray" /> 
-                    <Text style={{marginHorizontal: 10, color: "gray"}}>{element.item.discription1}</Text>
-                </View>
-                <View style={styles.desc2}>
-                   <Icon name='circle' size={8} color="gray" style={{marginTop: 8}} /> 
-                    <Text style={{marginHorizontal: 10, color: "gray"}}>{element.item.discription2}</Text>
-                </View>
-            </View>
-            <Pressable style={styles.viewdetails}><Text style={styles.viewdetailsText}> View Details</Text></Pressable>
+   {
+    details.map((item,i) => (
+<View style={styles.card} key={i}>
+<View style={styles.infoContainer}>
+    <Text style={styles.name}>{item.name}</Text>
+    <View style={styles.reviewContainer}>
+<Icon name='star' size={20} color="gray" /> 
+  <Text style={styles.rating}>{item.rating}</Text>
+  <Text style={styles.numberOfRating}>{item.totalRating}</Text>
+    </View>
+    <View style={styles.priceContainer}>
+        <Text style={styles.priceText}> ₹ {item.amount}</Text>
+        <View style={styles.timeContainer}>  
+           <Icon name='circle' size={8} color="gray" /> 
+            <Text style={{marginHorizontal: 5, color: "gray"}}>{item.time} </Text>
+            <Text style={{color: "gray"}}>mins </Text>
         </View>
-        <View style={styles.imageContainer}>
-          <View style={styles.imageCard}>
-          <Image 
-            source={element.item.imgUri}
-            style={styles.image}
-            resizeMode="cover"
-            />
-          </View>
-          <Pressable style={styles.button}><Text style={styles.addText}>Add</Text></Pressable>
+    </View>
+    <View style={styles.desc}>
+        <View style={styles.desc1}>
+           <Icon name='circle' size={8} color="gray" /> 
+            <Text style={{marginHorizontal: 10, color: "gray"}}>{item.discription1}</Text>
         </View>
-      </View>
-    )}
+        <View style={styles.desc2}>
+           <Icon name='circle' size={8} color="gray" style={{marginTop: 8}} /> 
+            <Text style={{marginHorizontal: 10, color: "gray"}}>{item.discription2}</Text>
+        </View>
+    </View>
+    <Pressable style={styles.viewdetails} onPress={handlepress}><Text style={styles.viewdetailsText}> View Details</Text></Pressable>
+</View>
+<View style={styles.imageContainer}>
+  <View style={styles.imageCard}>
+  <Image 
+    source={item.imgUri}
+    style={styles.image}
+    resizeMode="cover"
     />
+  </View>
+  <Pressable style={styles.button}><Text style={styles.addText}>Add</Text></Pressable>
+</View>
+</View>
+    ))
+   }
     </View>
   )
 }
@@ -162,3 +160,5 @@ const ServiceList = ({details}) => {
  })
 
 export default ServiceList
+
+
