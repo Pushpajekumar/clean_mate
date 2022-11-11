@@ -8,6 +8,7 @@ import {
   ScrollView,
   Image,
   TouchableOpacity,
+  FlatList,
 } from 'react-native';
 import {
   ProductOfferData,
@@ -26,6 +27,7 @@ import Servicelist2nd from './components/ServiceList2nd';
 import Modal from 'react-native-modal';
 import ImgUri from '../../../assets/images/car2.jpg';
 import Icon1 from 'react-native-vector-icons/AntDesign';
+import Icon2 from 'react-native-vector-icons/Entypo';
 
 const ServiceInfo = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -37,6 +39,34 @@ const ServiceInfo = () => {
   const handleClose = () => {
     setOpenModal(!openModal);
   };
+
+  const data = [
+    {
+      id: 1,
+      name: 'Trained Cleaners',
+      imgUri: ImgUri,
+    },
+    {
+      id: 2,
+      name: 'Industry grade tools and chemicals',
+      imgUri: ImgUri,
+    },
+    {
+      id: 3,
+      name: 'Efficient',
+      imgUri: ImgUri,
+    },
+    {
+      id: 4,
+      name: 'Product Cleaners',
+      imgUri: ImgUri,
+    },
+    {
+      id: 5,
+      name: 'Trained Cleaners',
+      imgUri: ImgUri,
+    },
+  ];
 
   return (
     <ScrollView>
@@ -205,6 +235,71 @@ const ServiceInfo = () => {
                   </View>
                 </View>
               </View>
+              <View style={styles.included}>
+                <Text style={styles.includedTitle}>Execluded</Text>
+                <View style={styles.includedContainer}>
+                  <View style={styles.excludedIamgeContainer}>
+                    <Icon2 name="cross" size={45} color="red" />
+                  </View>
+                  <View style={styles.excludedDetails}>
+                    <Text style={styles.excludedHeading}>
+                      {' '}
+                      Objects Removal Before Cleaning
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.includedContainer}>
+                  <View style={styles.excludedIamgeContainer}>
+                    <Icon2 name="cross" size={45} color="red" />
+                  </View>
+                  <View style={styles.excludedDetails}>
+                    <Text style={styles.excludedHeading}>
+                      {' '}
+                      Objects Removal Before Cleaning
+                    </Text>
+                  </View>
+                </View>
+                <View style={styles.includedContainer}>
+                  <View style={styles.excludedIamgeContainer}>
+                    <Icon2 name="cross" size={45} color="red" />
+                  </View>
+                  <View style={styles.excludedDetails}>
+                    <Text style={styles.excludedHeading}>
+                      {' '}
+                      Objects Removal Before Cleaning
+                    </Text>
+                  </View>
+                </View>
+              </View>
+              <View style={styles.features}>
+                <FlatList
+                  data={data}
+                  horizontal={true}
+                  showsHorizontalScrollIndicator={false}
+                  keyExtractor={item => item.id}
+                  renderItem={element => (
+                    <View style={styles.card}>
+                      <View style={styles.cardTextContainer}>
+                        <Text style={styles.cardText}>{element.item.name}</Text>
+                      </View>
+                      <View style={styles.cardImg}>
+                        <Image
+                          style={styles.cardImagePreview}
+                          source={element.item.imgUri}
+                        />
+                      </View>
+                    </View>
+                  )}
+                />
+                {/* <View style={styles.card}>
+                  <View style={styles.cardTextContainer}>
+                    <Text style={styles.cardText}>Trained Cleaners</Text>
+                  </View>
+                  <View style={styles.cardImg}>
+                    <Image style={styles.cardImagePreview} source={ImgUri} />
+                  </View>
+                </View> */}
+              </View>
             </ScrollView>
           </Modal>
         </View>
@@ -347,6 +442,7 @@ const styles = StyleSheet.create({
     width: '100%',
     paddingHorizontal: 10,
     backgroundColor: 'white',
+    paddingVertical: 10,
   },
   includedTitle: {
     fontSize: 22,
@@ -363,6 +459,13 @@ const styles = StyleSheet.create({
     height: 70,
     borderRadius: 5,
   },
+  excludedIamgeContainer: {
+    width: '20%',
+    height: 70,
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
   includedImage: {
     width: '100%',
     height: '100%',
@@ -371,15 +474,65 @@ const styles = StyleSheet.create({
   includedDetails: {
     paddingHorizontal: 5,
   },
+  excludedDetails: {
+    paddingHorizontal: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   includedHeading: {
     fontSize: 15,
     fontWeight: 'bold',
     color: 'black',
   },
+  excludedHeading: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    color: 'gray',
+  },
   includedDesc: {
     color: 'gray',
     fontSize: 13,
     paddingHorizontal: 10,
+  },
+  features: {
+    width: '100%',
+    marginVertical: 10,
+    height: 250,
+    backgroundColor: 'white',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  card: {
+    width: 250,
+    height: 170,
+    borderRadius: 10,
+    backgroundColor: 'lightgray',
+    flexDirection: 'row',
+    marginHorizontal: 20,
+  },
+  cardTextContainer: {
+    width: '60%',
+    height: '100%',
+    borderTopLeftRadius: 10,
+    borderBottomLeftRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  cardImg: {
+    width: '40%',
+    height: '100%',
+  },
+  cardImagePreview: {
+    width: '100%',
+    height: '100%',
+    borderTopRightRadius: 10,
+    borderBottomRightRadius: 10,
+  },
+  cardText: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'black',
   },
 });
 
